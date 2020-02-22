@@ -1,0 +1,34 @@
+{
+  "name": "@umm/git_cli",
+  "version": "4.1.1",
+  "description": "git command wrapper for Unity",
+  "homepage": "https://git_clihub.com/umm/git_cli",
+  "bugs": {
+    "url": "https://git_clihub.com/umm/git_cli/issues"
+  },
+  "scripts": {
+    "umm:init": "umm-init",
+    "umm:generate_assembly_definition": "umm-generate_assembly_definition",
+    "umm:module:install": "umm-module-install",
+    "umm:module:uninstall": "umm-module-uninstall",
+    "postinstall": "npm run --silent umm:module:install",
+    "postuninstall": "npm run --silent umm:module:uninstall"
+  },
+  "author": "Tetsuya Mori",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:umm/git_cli"
+  },
+  "files": [
+    "Assets",
+    "scripts"
+  ],
+  "dependencies": {
+    "@umm/command_runner": "umm/command_runner#^1.0.0",
+    "@umm/scripts": "umm/scripts#^1.0.0",
+    "@umm/setting_core": "umm/setting_core#^2.0.0",
+    "@umm/unirx": "umm/unirx#^2.0.0"
+  },
+  "devDependencies": {}
+}
